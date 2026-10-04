@@ -374,10 +374,46 @@
   display: block !important;
 }
 
-/* 4. Drawer Footer Action (Enquiry Button) */
+/* 4. Drawer Footer Action (WhatsApp Button) */
 .drawer-footer-action {
   padding-top: 1.5rem;
   margin-top: auto;
+}
+
+.drawer-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.95rem 1.25rem;
+  background: #25D366;
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  border-radius: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.32);
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.drawer-whatsapp-btn:hover {
+  background: #20BD5A;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(37, 211, 102, 0.45);
+}
+
+.drawer-whatsapp-btn .drawer-wa-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: currentColor;
 }
 
 .drawer-enquiry-btn,
