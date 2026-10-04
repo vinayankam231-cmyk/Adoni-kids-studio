@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStatCounters();
   initEstimator();
   initClientFeedback();
+  initFaqAccordion();
 });
 
 // In-Page Smooth Scrolling
@@ -628,4 +629,60 @@ function initStatCounters() {
   statCounters.forEach(counter => observer.observe(counter));
 }
 
+// Atelier FAQ Interactive Accordion
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
 
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question-btn');
+    const panel = item.querySelector('.faq-answer-panel');
+    if (!btn || !panel) return;
+
+    // Set initial open state
+    if (item.classList.contains('is-open')) {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      btn.setAttribute('aria-expanded', 'true');
+    } else {
+      panel.style.maxHeight = null;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+
+      // Close all other open items
+      faqItems.forEach(other => {
+        if (other !== item && other.classList.contains('is-open')) {
+          other.classList.remove('is-open');
+          const otherBtn = other.querySelector('.faq-question-btn');
+          const otherPanel = other.querySelector('.faq-answer-panel');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          if (otherPanel) otherPanel.style.maxHeight = null;
+        }
+      });
+
+      // Toggle this item
+      if (isOpen) {
+        item.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        panel.style.maxHeight = null;
+      } else {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Re-calculate heights if window resizes while an item is open
+  window.addEventListener('resize', () => {
+    const openItem = document.querySelector('.faq-item.is-open');
+    if (openItem) {
+      const openPanel = openItem.querySelector('.faq-answer-panel');
+      if (openPanel) {
+        openPanel.style.maxHeight = openPanel.scrollHeight + 'px';
+      }
+    }
+  });
+}

@@ -4034,6 +4034,196 @@
 }
 
 /* ==========================================================================
+   15. Atelier FAQ Section Styles (#faq)
+   ========================================================================== */
+.faq-unified-section {
+  padding: 5rem 0 4.5rem;
+  background-color: var(--color-bg-primary, #FAF7F2);
+  position: relative;
+}
+
+.faq-accordion-container {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid rgba(217, 182, 133, 0.42);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(37, 33, 31, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  border-color: rgba(143, 23, 48, 0.45);
+  box-shadow: 0 8px 24px rgba(143, 23, 48, 0.08);
+}
+
+.faq-item.is-open {
+  border-color: var(--color-accent, #8F1730);
+  box-shadow: 0 10px 28px rgba(143, 23, 48, 0.12);
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.45rem 1.75rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: 1.16rem;
+  font-weight: 700;
+  color: var(--color-text-main, #211916);
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.faq-question-btn:hover {
+  color: var(--color-accent, #8F1730);
+}
+
+.faq-item.is-open .faq-question-btn {
+  color: var(--color-accent, #8F1730);
+}
+
+.faq-icon-indicator {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(201, 169, 110, 0.15);
+  color: var(--color-accent, #8F1730);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-question-btn:hover .faq-icon-indicator {
+  background: rgba(143, 23, 48, 0.12);
+  transform: scale(1.06);
+}
+
+.faq-item.is-open .faq-icon-indicator {
+  background: var(--color-accent, #8F1730);
+  color: #FFFFFF;
+}
+
+.faq-icon-v {
+  transform-origin: center;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.faq-item.is-open .faq-icon-v {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.faq-answer-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.is-open .faq-answer-panel {
+  opacity: 1;
+}
+
+.faq-answer-content {
+  padding: 0 1.75rem 1.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #5C524E;
+  border-top: 1px dashed rgba(217, 182, 133, 0.35);
+  padding-top: 1.15rem;
+}
+
+.faq-wa-link {
+  color: #128C7E;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.faq-wa-link:hover {
+  color: #25D366;
+}
+
+.faq-footer-cta {
+  max-width: 620px;
+  margin: 3.25rem auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.faq-footer-cta p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: #7A6F69;
+  margin: 0;
+}
+
+.faq-direct-chat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background: rgba(143, 23, 48, 0.06);
+  border: 1px solid rgba(143, 23, 48, 0.25);
+  border-radius: 999px;
+  color: var(--color-accent, #8F1730);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: all 0.25s ease;
+}
+
+.faq-direct-chat-btn:hover {
+  background: var(--color-accent, #8F1730);
+  color: #FFFFFF;
+  border-color: var(--color-accent, #8F1730);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(143, 23, 48, 0.22);
+}
+
+@media (max-width: 768px) {
+  .faq-unified-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+  .faq-question-btn {
+    font-size: 1.05rem;
+    padding: 1.25rem 1.25rem;
+    gap: 1rem;
+  }
+  .faq-answer-content {
+    padding: 0 1.25rem 1.35rem;
+    font-size: 0.93rem;
+  }
+  .faq-icon-indicator {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ==========================================================================
    16. Reduced Motion Accessibility Mode
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
