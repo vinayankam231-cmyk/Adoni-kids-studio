@@ -497,7 +497,7 @@
     doc.text('LUXURY NEWBORN, MATERNITY & 3D CASTINGS SANCTUARY', 15, 25);
 
     doc.setFontSize(8);
-    doc.text('Shanti Estate, Vimala Regency New Five Star, Hotel Road, Near Mahima Church, Adoni, AP 518301 | +91 94410 05963', 15, 31);
+    doc.text('Shanti Estate, Vimala Regency, New Five Star to Hotel Road, Near Mahima Church, Adoni, AP 518301 | +91 94410 05963', 15, 31);
 
     // Date & Quotation ID
     const today = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
