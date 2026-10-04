@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoni Kids Studio | Luxury Newborn, Family, Maternity &amp; Kids Photography</title>
+  <meta name="description" content="Adoni Kids Studio specializes in emotive, timeless newborn photography, family portraits, maternity, pre-birthday milestones, and bespoke 3D hand-casting heirlooms in Adoni and surrounding areas.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Primary Fixed Circular Menu Button (Only Navigation System) -->
+  <button class="hero-circular-menu-btn" id="heroMenuToggle" aria-label="Open Navigation Menu">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+  </button>
+
+  <!-- Primary Off-Canvas Left Drawer Navigation (Matching Reference: media_1791101536424.png) -->
+  <div class="mobile-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-nav-drawer atelier-left-drawer" id="atelierDrawer" aria-label="Main Navigation">
+    <div class="drawer-top-content">
+      <!-- 1. Drawer Header: Brand Mark & Circular Close Button -->
+      <div class="drawer-header">
+        <a href="#hero" class="drawer-brand-logo" aria-label="Adoni Kids Studio Homepage">
+          <span class="drawer-brand-title">Adoni Kids Studio</span>
+          <span class="drawer-brand-badge">LUXURY ATELIER</span>
+        </a>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 2. Navigation Label -->
+      <span class="drawer-nav-label">NAVIGATION</span>
+
+      <!-- 3. Navigation Items (Matching Reference: media_1791101536424.png) -->
+      <nav class="drawer-nav-list mobile-nav-links" aria-label="Atelier Navigation Links">
+        <!-- 1. Home (Active pill style) -->
+        <a href="#hero" class="drawer-nav-item active" data-nav="hero">
+          <span class="drawer-item-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </span>
+          <span class="drawer-item-label">Home</span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+
+        <!-- 2. Portfolio -->
+        <a href="#portfolio" class="drawer-nav-item" data-nav="portfolio">
+          <span class="drawer-item-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </span>
+          <span class="drawer-item-label">Portfolio</span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+
+        <!-- 3. About Us -->
+        <a href="#about" class="drawer-nav-item" data-nav="about">
+          <span class="drawer-item-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+          </span>
+          <span class="drawer-item-label">About Us</span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+
+        <!-- 4. Services -->
+        <a href="#services" class="drawer-nav-item" data-nav="services">
+          <span class="drawer-item-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </span>
+          <span class="drawer-item-label">Services</span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+
+        <!-- 5. Contact -->
+        <a href="#contact" class="drawer-nav-item" data-nav="contact">
+          <span class="drawer-item-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="drawer-item-label">Contact</span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- 4. Drawer Footer Action (SELECT YOUR PACKAGE) -->
+    <div class="drawer-footer-action">
+      <a href="#estimator" class="drawer-package-btn" id="drawerPackageBtn">
+        <svg class="package-btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+          <line x1="12" y1="22.08" x2="12" y2="12"/>
+        </svg>
+        <span>SELECT YOUR PACKAGE</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION: Fixed Content with Background Photography Slideshow (#hero)
+         ========================================================================== -->
+    <section class="hero-section hero-fullscreen-slideshow" id="hero" aria-label="Studio Category Showcase">
+      
+      <!-- LAYER 1: Background Image Slideshow Layer (Only this layer changes) -->
+      <div class="hero-bg-slider" id="heroBgSlider" aria-hidden="true">
+        <div class="hero-bg-track" id="heroSliderTrack">
+          
+          <!-- Slide 1: NEWBORN (User Selected) -->
+          <div class="hero-bg-slide" data-index="0" data-category="newborn">
+            <img 
+              src="assets/images/newborn/newborn-black-tutu-slumber.jpg" 
+              alt="Newborn baby girl sleeping peacefully in black tutu with floral headband on cozy fur" 
+              class="hero-bg-img hero-focal-newborn"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Slide 2: MATERNITY (User Selected) -->
+          <div class="hero-bg-slide" data-index="1" data-category="maternity">
+            <img 
+              src="assets/images/maternity/maternity-couple-traditional-green.jpg" 
+              alt="Expecting couple in traditional South Indian green silk saree and dhoti embracing baby bump" 
+              class="hero-bg-img hero-focal-maternity"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Slide 3: FAMILY PORTRAITS (User Selected) -->
+          <div class="hero-bg-slide" data-index="2" data-category="family">
+            <img 
+              src="assets/images/family/family-newborn-parents-bw.jpg" 
+              alt="Fine-art monochrome family portrait of loving parents cuddling newborn baby" 
+              class="hero-bg-img hero-focal-family"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Slide 4: PRE-BIRTHDAY (User Selected) -->
+          <div class="hero-bg-slide" data-index="3" data-category="pre-birthday">
+            <img 
+              src="assets/images/pre-birthday/pre-birthday-toddler-bmw-night.jpg" 
+              alt="Joyful toddler celebrating first birthday driving red electric BMW car at night palace venue" 
+              class="hero-bg-img hero-focal-prebirthday"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LAYER 1.5: Cinematic Dark Gradient Overlay -->
+      <div class="hero-slide-overlay" aria-hidden="true"></div>
+
+      <!-- LAYER 2: Minimal Modern Fixed Foreground Elements (Ref: video-1) -->
+      <div class="hero-minimal-foreground" aria-label="Hero Foreground Navigation">
+        
+        <!-- 1. Upper-Center Tasteful Studio Logo -->
+        <a href="#hero" class="hero-center-logo" aria-label="Adoni Kids Studio Homepage">
+          <span class="hero-logo-title">Adoni Kids Studio</span>
+          <span class="hero-logo-subtitle">Luxury Photography Studio</span>
+        </a>
+
+        <!-- 3. Bottom-Center Minimal Slider Indicators -->
+        <div class="hero-minimal-indicators" role="tablist" aria-label="Hero Slideshow Indicators">
+          <button class="hero-indicator-dot active" role="tab" data-slide-to="0" aria-label="Slide 1: Newborn"></button>
+          <button class="hero-indicator-dot" role="tab" data-slide-to="1" aria-label="Slide 2: Maternity"></button>
+          <button class="hero-indicator-dot" role="tab" data-slide-to="2" aria-label="Slide 3: Family"></button>
+          <button class="hero-indicator-dot" role="tab" data-slide-to="3" aria-label="Slide 4: Pre-Birthday"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 2: About the Studio
+         ========================================================================== -->
+    <section class="about-unified-section" id="about">
+      <div class="container">
+        <div class="about-unified-grid reveal-on-scroll">
+          
+          <div class="about-content">
+            <span class="subheading">About Adoni Kids Studio</span>
+            <h2 class="heading-2" style="font-size: 2.3rem; margin-top: 0.35rem; line-height: 1.25;">
+              Preserving the Delicate Emotion &amp; Wonder of Childhood
+            </h2>
+
+            <div class="about-editorial-text">
+              <p>
+                Founded in Adoni, Andhra Pradesh, <strong>Adoni Kids Studio</strong> is a boutique fine-art atelier dedicated to capturing the fleeting, once-in-a-lifetime milestones of parenthood. From the quiet serenity of a 10-day-old newborn to the joyous laughter of first birthdays and timeless family portraits, we believe these delicate memories deserve to be preserved as generational heirlooms.
+              </p>
+              <p>
+                Unlike high-volume commercial studios, we deliberately host only <strong>one family at a time</strong>. Our private studio is purpose-built with temperature-controlled posing suites, medical-grade sanitized props, and peaceful nursing lounges—giving babies and parents an unhurried, gentle, and comfortable experience.
+              </p>
+            </div>
+
+            <!-- Trust Pillars / Reassurances -->
+            <div class="about-pillars-pills">
+              <div class="about-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>100% Infant Safety Certified</span>
+              </div>
+              <div class="about-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span>Baby-Led &amp; Unrushed Sessions</span>
+              </div>
+              <div class="about-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <span>Curated Wardrobe &amp; Props Included</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="#portfolio" class="btn btn-secondary">
+                <span>Explore Curated Portfolio &darr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Curated Atelier Imagery Frame -->
+          <div class="about-image-stage">
+            <div class="about-frame-wrapper">
+              <img src="assets/images/family/family-loving-embrace-newborn.jpg" alt="Parents tenderly holding newborn baby in serene studio lighting" loading="lazy">
+            </div>
+            <div class="about-floating-reassurance">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(168, 54, 29, 0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <div>
+                <strong>Single-Family Dedicated Care</strong>
+                <span>Never crowded • Hospital-grade sanitization</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Atelier Signature Milestones & Statistics (Count-Up Animation) -->
+        <div class="about-stats-grid reveal-on-scroll">
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="300">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Happy Families Preserved</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="500">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Milestone Photo Sessions</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="3">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Years Atelier Experience</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="99">0</span><span class="stat-suffix">%</span>
+            </div>
+            <span class="stat-label">Parent Satisfaction Rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3: Curated Portfolio (All 38 Photos in Strict Client Order)
+         ========================================================================== -->
+    <section class="section-spacing portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="subheading">Curated Portfolio</span>
+          <h2 class="heading-1">Moments Frozen in Pure Elegance</h2>
+          <p class="text-muted">
+            An editorial curation of authentic family milestones across Newborn, Maternity, Family, and Pre-Birthday sessions. Click any photograph to explore in high resolution.
+          </p>
+        </div>
+
+                <!-- Editorial Asymmetric Category Filter Pills -->
+        <div class="portfolio-filters-wrap" role="tablist" aria-label="Portfolio Category Filters">
+          <button class="portfolio-filter-pill active" data-filter="all">All Sessions (32)</button>
+          <button class="portfolio-filter-pill" data-filter="newborn">Newborn (13)</button>
+          <button class="portfolio-filter-pill" data-filter="maternity">Maternity (8)</button>
+          <button class="portfolio-filter-pill" data-filter="family">Family (6)</button>
+          <button class="portfolio-filter-pill" data-filter="pre-birthday">Pre-Birthday (5)</button>
+        </div>
+
+        <!-- Editorial Asymmetric Magazine-Style Multi-Column Gallery -->
+        <div class="portfolio-editorial-gallery">
+          <div class="portfolio-editorial-card ratio-portrait" data-category="newborn" data-highres="assets/images/newborn/newborn-lotus-wrap.jpg">
+            <img src="assets/images/newborn/newborn-lotus-wrap.jpg" alt="Newborn baby sleeping serenely in pink lotus floral cocoon wrap" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Lotus Blossom Cocoon</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="maternity" data-highres="assets/images/maternity/maternity-golden-hour-red-saree.jpg">
+            <img src="assets/images/maternity/maternity-golden-hour-red-saree.jpg" alt="Mother in crimson silk saree backlit by warm golden hour sunset" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Crimson Sunset Radiance</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-wide" data-category="pre-birthday" data-highres="assets/images/pre-birthday/pre-birthday-first-year-grand-piano.jpg">
+            <img src="assets/images/pre-birthday/pre-birthday-first-year-grand-piano.jpg" alt="One-year-old child at classic baby grand piano with sheet music" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Pre-Birthday Milestone</span>
+              <h3 class="portfolio-editorial-title">Little Maestro Grand Piano</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-classic" data-category="family" data-highres="assets/images/family/family-loving-embrace-newborn.jpg">
+            <img src="assets/images/family/family-loving-embrace-newborn.jpg" alt="Mother cradling newborn baby against chest in gentle loving portrait" loading="lazy" style="object-position: center 35%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Family Heritage</span>
+              <h3 class="portfolio-editorial-title">Warm Parental Haven</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-landscape" data-category="newborn" data-highres="assets/images/newborn/newborn-sunflower-heart.jpg">
+            <img src="assets/images/newborn/newborn-sunflower-heart.jpg" alt="Swaddled newborn resting in sunflower heart floral wreath on rustic timber" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Sunflower Heart Floral Slumber</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="maternity" data-highres="assets/images/maternity/maternity-editorial-bw-fedora.jpg">
+            <img src="assets/images/maternity/maternity-editorial-bw-fedora.jpg" alt="Fine-art monochrome maternity silhouette with fedora hat styling" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">High-Fashion Fedora Silhouette</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-square" data-category="family" data-highres="assets/images/family/family-parents-kiss-baby.jpg">
+            <img src="assets/images/family/family-parents-kiss-baby.jpg" alt="Parents giving tender double kiss to their newborn baby" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Family Heritage</span>
+              <h3 class="portfolio-editorial-title">Parental Devotion & Gentle Kiss</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="newborn" data-highres="assets/images/newborn/newborn-crescent-moon-clouds.jpg">
+            <img src="assets/images/newborn/newborn-crescent-moon-clouds.jpg" alt="Sleeping newborn baby cradled in starry night crescent moon prop" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Starry Night Crescent Moon</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-wide" data-category="pre-birthday" data-highres="assets/images/pre-birthday/pre-birthday-village-bullock-cart.jpg">
+            <img src="assets/images/pre-birthday/pre-birthday-village-bullock-cart.jpg" alt="Toddler celebrating milestone in traditional rustic bullock cart setup" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Pre-Birthday Milestone</span>
+              <h3 class="portfolio-editorial-title">Traditional Heritage Bullock Cart</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="maternity" data-highres="assets/images/maternity/maternity-lavender-fairytale-gown.jpg">
+            <img src="assets/images/maternity/maternity-lavender-fairytale-gown.jpg" alt="Expecting mother in ethereal lavender fairytale tulle maternity couture" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Lavender Fairytale Gown</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-classic" data-category="newborn" data-highres="assets/images/newborn/newborn-sage-teddy.jpg">
+            <img src="assets/images/newborn/newborn-sage-teddy.jpg" alt="Sleeping infant in sage green knitted wrap cuddling a mini teddy bear" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Sage Green Knit with Teddy</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="maternity" data-highres="assets/images/maternity/maternity-royal-orange-kanchipuram.jpg">
+            <img src="assets/images/maternity/maternity-royal-orange-kanchipuram.jpg" alt="Maternity portrait in royal orange Kanchipuram silk saree with gold temple jewellery" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Royal Orange Kanchipuram Heritage</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-portrait" data-category="newborn" data-highres="assets/images/newborn/newborn-hammock-swing.jpg">
+            <img src="assets/images/newborn/newborn-hammock-swing.jpg" alt="Peaceful baby sleeping in hanging rustic ivy hammock swing" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Hanging Ivy Hammock Swing</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-square" data-category="family" data-highres="assets/images/family/family-newborn-parents-bw.jpg">
+            <img src="assets/images/family/family-newborn-parents-bw.jpg" alt="Timeless black and white studio portrait of parents holding newborn" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Family Heritage</span>
+              <h3 class="portfolio-editorial-title">Eternal Monochrome First Embrace</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-landscape" data-category="newborn" data-highres="assets/images/newborn/newborn-twins-heart-bowl.jpg">
+            <img src="assets/images/newborn/newborn-twins-heart-bowl.jpg" alt="Twin newborn babies snuggled together in carved wooden heart bowl" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Twin Miracles in Handcrafted Bowl</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="pre-birthday" data-highres="assets/images/pre-birthday/pre-birthday-garden-yellow-moon.jpg">
+            <img src="assets/images/pre-birthday/pre-birthday-garden-yellow-moon.jpg" alt="Toddler celebrating milestone in enchanted garden with glowing yellow moon" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Pre-Birthday Milestone</span>
+              <h3 class="portfolio-editorial-title">Enchanted Forest Golden Moon</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-portrait" data-category="maternity" data-highres="assets/images/maternity/maternity-couple-traditional-green.jpg">
+            <img src="assets/images/maternity/maternity-couple-traditional-green.jpg" alt="Couple posing together in traditional South Indian temple green silk garments" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Traditional Temple Silk Couple</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-classic" data-category="newborn" data-highres="assets/images/newborn/newborn-crown-regal.jpg">
+            <img src="assets/images/newborn/newborn-crown-regal.jpg" alt="Newborn prince wearing delicate handcrafted gold crown sleeping soundly" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Regal Little Prince with Crown</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="family" data-highres="assets/images/family/family-sibling-brother-sister.jpg">
+            <img src="assets/images/family/family-sibling-brother-sister.jpg" alt="Proud older sister holding her newborn baby brother with tender adoration" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Family Heritage</span>
+              <h3 class="portfolio-editorial-title">Big Sister & Baby Brother Bonds</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-landscape" data-category="newborn" data-highres="assets/images/newborn/newborn-black-tutu-slumber.jpg">
+            <img src="assets/images/newborn/newborn-black-tutu-slumber.jpg" alt="Baby girl slumbering in midnight black tutu with delicate floral headband" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Midnight Black Tutu Slumber</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="maternity" data-highres="assets/images/maternity/maternity-yellow-ruffle-gown.jpg">
+            <img src="assets/images/maternity/maternity-yellow-ruffle-gown.jpg" alt="Radiant mother-to-be wearing canary yellow ruffled couture maternity gown" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Golden Yellow Ruffle Bloom</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-classic" data-category="newborn" data-highres="assets/images/newborn/newborn-smiling-teepee.jpg">
+            <img src="assets/images/newborn/newborn-smiling-teepee.jpg" alt="Smiling newborn asleep under bohemian boho teepee tent canopy" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Bohemian Teepee Adventure</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-wide" data-category="pre-birthday" data-highres="assets/images/pre-birthday/pre-birthday-toddler-crescent-moon.jpg">
+            <img src="assets/images/pre-birthday/pre-birthday-toddler-crescent-moon.jpg" alt="Toddler lying on celestial crescent moon prop with dreamy blue lighting" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Pre-Birthday Milestone</span>
+              <h3 class="portfolio-editorial-title">Celestial Dreamer Crescent Moon</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="newborn" data-highres="assets/images/newborn/newborn-boss-baby-theme.jpg">
+            <img src="assets/images/newborn/newborn-boss-baby-theme.jpg" alt="Newborn boy in miniature executive suit with briefcase in Boss Baby theme" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">The Little Boss Executive Theme</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-portrait" data-category="maternity" data-highres="assets/images/maternity/maternity-fineart-emerald-fruit.jpg">
+            <img src="assets/images/maternity/maternity-fineart-emerald-fruit.jpg" alt="Fine-art Renaissance style maternity portrait in emerald velvet with ornate styling" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Emerald Renaissance Fine Art</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="family" data-highres="assets/images/family/family-generations-profile-tribute.jpg">
+            <img src="assets/images/family/family-generations-profile-tribute.jpg" alt="Artistic black-and-white profile tribute of three family generations" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Family Heritage</span>
+              <h3 class="portfolio-editorial-title">Three Generations Lineage Tribute</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-landscape" data-category="newborn" data-highres="assets/images/newborn/newborn-bumblebee-cot.jpg">
+            <img src="assets/images/newborn/newborn-bumblebee-cot.jpg" alt="Newborn dressed as little honeybee in miniature handwoven bumblebee cot" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Sweet Honeybee Cot Slumber</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="maternity" data-highres="assets/images/maternity/maternity-temple-steps-couple.jpg">
+            <img src="assets/images/maternity/maternity-temple-steps-couple.jpg" alt="Couple posing on majestic stone temple steps celebrating their first pregnancy" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Maternity Radiance</span>
+              <h3 class="portfolio-editorial-title">Sacred Temple Steps Maternity</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-classic" data-category="newborn" data-highres="assets/images/newborn/newborn-grey-cocoon-smile.jpg">
+            <img src="assets/images/newborn/newborn-grey-cocoon-smile.jpg" alt="Infant smiling in delicate grey textured knit cocoon swaddle" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Gentle Grey Cocoon Smile</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-tall" data-category="family" data-highres="assets/images/family/family-father-daughter-milestones.jpg">
+            <img src="assets/images/family/family-father-daughter-milestones.jpg" alt="Father gently holding his infant daughter with heartfelt parental pride" loading="lazy" style="object-position: center 25%;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Family Heritage</span>
+              <h3 class="portfolio-editorial-title">Father Tender Guiding Hand</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-square" data-category="newborn" data-highres="assets/images/newborn/newborn-harry-potter-theme.jpg">
+            <img src="assets/images/newborn/newborn-harry-potter-theme.jpg" alt="Newborn baby styled with Hogwarts scarf, wand, and round glasses" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Newborn Photography</span>
+              <h3 class="portfolio-editorial-title">Hogwarts Little Wizard</h3>
+            </div>
+          </div>
+          <div class="portfolio-editorial-card ratio-wide" data-category="pre-birthday" data-highres="assets/images/pre-birthday/pre-birthday-toddler-bmw-night.jpg">
+            <img src="assets/images/pre-birthday/pre-birthday-toddler-bmw-night.jpg" alt="First birthday boy in toddler BMW sports car on illuminated runway setup" loading="lazy" style="object-position: center center;">
+            <div class="portfolio-editorial-overlay">
+              <span class="portfolio-editorial-tag">Pre-Birthday Milestone</span>
+              <h3 class="portfolio-editorial-title">Little Racer Luxury Roadster</h3>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="#services" class="btn btn-lg btn-secondary">
+            <span>Explore Services &amp; Packages</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 04: Services & Packages (#services)
+         ========================================================================== -->
+    <section class="services-unified-section" id="services">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="subheading">Tailored Offerings</span>
+          <h2 class="heading-1">Milestone Photography &amp; Keepsakes</h2>
+          <p class="section-description" style="max-width: 680px; margin: 1rem auto 0; text-align: center;">
+            Curated sessions crafted with gentle patience, artisanal props, and heirloom deliverables. Dedicated to preserving your family's most precious milestones.
+          </p>
+        </div>
+
+        <div class="services-unified-grid">
+          
+          <!-- Card 1: Newborn Photography -->
+          <article class="service-card-clean">
+            <div class="service-card-img-wrapper">
+              <img src="assets/images/newborn/newborn-lotus-wrap.jpg" alt="Baby in pink lotus floral wrap">
+              <div class="service-card-img-overlay" aria-hidden="true"></div>
+              <span class="service-card-badge-top">MOST REQUESTED</span>
+              <div class="service-card-floating-icon" aria-hidden="true" title="High-Resolution Photography">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                  <circle cx="12" cy="13" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-category">Signature Collection</span>
+              <h3 class="service-card-title">Newborn Photography</h3>
+              <p class="service-card-desc">
+                Safe, baby-led sessions preserving delicate newborn curls, sleepy smiles, and tiny features within the first 5–20 days.
+              </p>
+              <ul class="service-deliverables-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>15+ Retouched high-resolution portraits</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Temperature-controlled suite &amp; sanitized wraps</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Unhurried feeding breaks &amp; parent/sibling poses</span>
+                </li>
+              </ul>
+              <div class="service-card-cta">
+                <a href="https://wa.me/919441005963?text=Hello%20Adoni%20Kids%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20a%20Newborn%20Photography%20Session!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Enquire on WhatsApp</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Family Portraits -->
+          <article class="service-card-clean">
+            <div class="service-card-img-wrapper">
+              <img src="assets/images/family/family-newborn-parents-bw.jpg" alt="Parents holding newborn tender monochrome portrait">
+              <div class="service-card-img-overlay" aria-hidden="true"></div>
+              <span class="service-card-badge-top">EMOTIONAL FRAMES</span>
+              <div class="service-card-floating-icon" aria-hidden="true" title="Heirloom Portraiture">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="7" y="3" width="14" height="14" rx="2"/>
+                  <path d="M3 7v12a2 2 0 0 0 2 2h12"/>
+                  <circle cx="14" cy="10" r="1.5"/>
+                  <polyline points="21 14 17 10 11 16"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-category">Generational Legacy</span>
+              <h3 class="service-card-title">Family Portraits</h3>
+              <p class="service-card-desc">
+                Heartfelt generational portraits celebrating the unspoken bond between parents, grandparents, and children in classic warmth.
+              </p>
+              <ul class="service-deliverables-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>18+ High-resolution editorial portraits</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Complete styling &amp; wardrobe color palette guide</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Multi-generational group &amp; intimate duo frames</span>
+                </li>
+              </ul>
+              <div class="service-card-cta">
+                <a href="https://wa.me/919441005963?text=Hello%20Adoni%20Kids%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20a%20Family%20Portrait%20Session!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Enquire on WhatsApp</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Maternity Photography -->
+          <article class="service-card-clean">
+            <div class="service-card-img-wrapper">
+              <img src="assets/images/maternity/maternity-yellow-ruffle-gown.jpg" alt="Maternity yellow ruffle gown portrait">
+              <div class="service-card-img-overlay" aria-hidden="true"></div>
+              <span class="service-card-badge-top">STUDIO SIGNATURE</span>
+              <div class="service-card-floating-icon" aria-hidden="true" title="Fine-Art Maternal Portraits">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="3"/>
+                  <line x1="12" y1="2" x2="12" y2="5"/>
+                  <line x1="12" y1="19" x2="12" y2="22"/>
+                  <line x1="2" y1="12" x2="5" y2="12"/>
+                  <line x1="19" y1="12" x2="22" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-category">Motherhood Grace</span>
+              <h3 class="service-card-title">Maternity Photography</h3>
+              <p class="service-card-desc">
+                Empowering maternal portraits capturing the radiant glow, emotional anticipation, and fine-art elegance of motherhood.
+              </p>
+              <ul class="service-deliverables-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>15+ Fine-art retouched images</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Access to studio designer gown &amp; drape collection</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Partner &amp; elder sibling inclusion at no extra fee</span>
+                </li>
+              </ul>
+              <div class="service-card-cta">
+                <a href="https://wa.me/919441005963?text=Hello%20Adoni%20Kids%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20a%20Maternity%20Session!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Enquire on WhatsApp</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Pre-Birthday & Milestones -->
+          <article class="service-card-clean">
+            <div class="service-card-img-wrapper">
+              <img src="assets/images/pre-birthday/pre-birthday-toddler-crescent-moon.jpg" alt="Toddler boy sitting on luminous yellow crescent moon">
+              <div class="service-card-img-overlay" aria-hidden="true"></div>
+              <span class="service-card-badge-top">CINEMATIC 4K</span>
+              <div class="service-card-floating-icon" aria-hidden="true" title="Celebratory Films & Reels">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="23 7 16 12 23 17 23 7"/>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-category">Joyful Milestones</span>
+              <h3 class="service-card-title">Pre-Birthday &amp; Kids</h3>
+              <p class="service-card-desc">
+                Vibrant, play-based celebratory sessions with customized birthday themes, cake smashes, and authentic candid giggles.
+              </p>
+              <ul class="service-deliverables-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>20+ High-resolution celebratory frames</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Handcrafted themes (Moon, Garden, Whimsical)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Cake smash setup &amp; full studio clean-up care</span>
+                </li>
+              </ul>
+              <div class="service-card-cta">
+                <a href="https://wa.me/919441005963?text=Hello%20Adoni%20Kids%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20a%20Birthday%20or%20Kids%20Session!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Enquire on WhatsApp</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: 3D Hand & Foot Impression Castings -->
+          <article class="service-card-clean">
+            <div class="service-card-img-wrapper">
+              <img src="assets/images/castings/casting-love-smitha-chandan-white.jpg" alt="Baby 3D hand and feet casts with brass baby name plaque">
+              <div class="service-card-img-overlay" aria-hidden="true"></div>
+              <span class="service-card-badge-top">LIFETIME KEEPSAKE</span>
+              <div class="service-card-floating-icon" aria-hidden="true" title="Archival 3D Keepsake Artifact">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-category">Heirloom Keepsakes</span>
+              <h3 class="service-card-title">3D Impression Castings</h3>
+              <p class="service-card-desc">
+                Non-toxic, dermatologically safe 3D casts capturing every microscopic wrinkle and cuticle of tiny hands and feet.
+              </p>
+              <ul class="service-deliverables-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>100% Organic certified skin-safe molding gel</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pure metallic finish (Gold, Silver, Champagne Bronze)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Custom archival wooden &amp; LED display frame</span>
+                </li>
+              </ul>
+              <div class="service-card-cta">
+                <a href="https://wa.me/919441005963?text=Hello%20Adoni%20Kids%20Studio%2C%20I%20would%20like%20to%20inquire%20about%203D%20Hand%20and%20Foot%20Castings!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Enquire on WhatsApp</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 05: The Studio Experience (#experience)
+         ========================================================================== -->
+    <section class="experience-unified-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="subheading">The Studio Difference</span>
+          <h2 class="heading-1">Why Families Trust Adoni Kids Studio</h2>
+          <p class="section-description" style="max-width: 680px; margin: 1rem auto 0; text-align: center;">
+            Every appointment is treated as an intimate celebration. We prioritize safety, comfort, and soothing patience above all else.
+          </p>
+        </div>
+
+        <div class="experience-unified-grid">
+          
+          <div class="experience-pillar-card">
+            <div class="experience-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="experience-pillar-title">Hospital-Grade Hygiene</h3>
+            <p class="experience-pillar-text">
+              All wraps, blankets, and prop surfaces undergo medical-grade UV sterilization and non-chemical laundering before every baby's session.
+            </p>
+          </div>
+
+          <div class="experience-pillar-card">
+            <div class="experience-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
+            <h3 class="experience-pillar-title">Baby-Led Patience</h3>
+            <p class="experience-pillar-text">
+              We never rush a baby. Generous 2–3 hour session windows allow continuous pauses for soothing, nursing, diapering, and comforting cuddles.
+            </p>
+          </div>
+
+          <div class="experience-pillar-card">
+            <div class="experience-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="experience-pillar-title">Curated Wardrobe &amp; Props</h3>
+            <p class="experience-pillar-text">
+              Complimentary access to designer maternity gowns, artisanal organic swaddles, handmade wooden bowls, and custom miniature themed sets.
+            </p>
+          </div>
+
+          <div class="experience-pillar-card">
+            <div class="experience-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <h3 class="experience-pillar-title">Archival Keepsakes</h3>
+            <p class="experience-pillar-text">
+              Beyond digital files, we deliver museum-quality flush mount albums, bespoke framed wall art, and lifelike 3D metallic casts crafted to last generations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Client Feedback & Stories Showcase (Above Contact Section)
+         ========================================================================== -->
+    <section class="feedback-unified-section" id="clientFeedback" aria-label="Client Stories and Feedback">
+      <div class="container">
+        
+<!-- Client Feedback & Review Showcase (Replaces Quick WhatsApp Enquiry Selector) -->
+        <div class="feedback-showcase-wrap" aria-label="Client Stories and Feedback">
+          <div class="feedback-card reveal-on-scroll">
+            
+            <!-- Slides Viewport -->
+            <div class="feedback-slides-track">
+
+              <!-- Slide 1: Newborn -->
+              <div class="feedback-slide" data-index="0">
+                <!-- Left Column: Profile & Info -->
+                <div class="feedback-col-profile">
+                  <span class="feedback-category-tag">NEWBORN HEIRLOOM SESSION</span>
+                  <div class="feedback-user-row">
+                    <img src="assets/images/newborn/newborn-lotus-wrap.jpg" alt="Pooja & Rajesh" class="feedback-avatar">
+                    <div class="feedback-user-meta">
+                      <h4 class="feedback-author-name">Pooja &amp; Rajesh</h4>
+                      <p class="feedback-author-role">Newborn Session</p>
+                      <p class="feedback-author-loc">Adoni, Andhra Pradesh</p>
+                    </div>
+                  </div>
+                  <div class="feedback-stars" aria-label="5 out of 5 stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>
+                  <div class="feedback-satisfaction-badge">
+                    <span class="dot-green"></span> RESULT &bull; 100% SATISFACTION
+                  </div>
+                  
+                  <div class="feedback-left-divider"></div>
+
+                  <div class="feedback-nav-row">
+                    <span class="feedback-counter"><strong class="counter-curr">01</strong> <span class="counter-slash">/</span> <span class="counter-total">04</span></span>
+                    <div class="feedback-arrow-btns">
+                      <button class="feedback-btn-prev" aria-label="Previous feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                      </button>
+                      <button class="feedback-btn-next" aria-label="Next feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Column: Quote & Verified Tag -->
+                <div class="feedback-col-quote">
+                  <div class="feedback-quote-mark" aria-hidden="true">
+                    <svg width="42" height="34" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                  </div>
+                  <blockquote class="feedback-quote-text">
+                    "We were nervous about photographing our 12-day-old baby, but the team's <span class="feedback-highlight">gentle patience and soothing environment</span> made all the difference. Every delicate smile and curl was captured so beautifully. The framed heirloom album is something our family will <span class="feedback-highlight">treasure forever!</span>"
+                  </blockquote>
+                  <div class="feedback-verified-tag">
+                    <span class="verified-dash">—</span> VERIFIED PARENT REVIEW
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Ramya (Exact match to uploaded screenshot media_1790963351309.png) -->
+              <div class="feedback-slide active" data-index="1">
+                <div class="feedback-col-profile">
+                  <span class="feedback-category-tag">BRIDAL PORTRAIT SESSION</span>
+                  <div class="feedback-user-row">
+                    <img src="assets/images/maternity/maternity-couple-traditional-green.jpg" alt="Ramya" class="feedback-avatar">
+                    <div class="feedback-user-meta">
+                      <h4 class="feedback-author-name">Ramya</h4>
+                      <p class="feedback-author-role">Bridal Portraiture</p>
+                      <p class="feedback-author-loc">Adoni, Andhra Pradesh</p>
+                    </div>
+                  </div>
+                  <div class="feedback-stars" aria-label="5 out of 5 stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>
+                  <div class="feedback-satisfaction-badge">
+                    <span class="dot-green"></span> RESULT &bull; 100% SATISFACTION
+                  </div>
+                  
+                  <div class="feedback-left-divider"></div>
+
+                  <div class="feedback-nav-row">
+                    <span class="feedback-counter"><strong class="counter-curr">02</strong> <span class="counter-slash">/</span> <span class="counter-total">04</span></span>
+                    <div class="feedback-arrow-btns">
+                      <button class="feedback-btn-prev" aria-label="Previous feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                      </button>
+                      <button class="feedback-btn-next" aria-label="Next feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feedback-col-quote">
+                  <div class="feedback-quote-mark" aria-hidden="true">
+                    <svg width="42" height="34" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                  </div>
+                  <blockquote class="feedback-quote-text">
+                    "I am absolutely in love with the bridal portraits. They made me feel so comfortable, and <span class="feedback-highlight">every detail of my attire &amp; jewelry</span> came out so beautifully. The selection portal made choosing my favorites <span class="feedback-highlight">seamless!</span>"
+                  </blockquote>
+                  <div class="feedback-verified-tag">
+                    <span class="verified-dash">—</span> VERIFIED BRIDAL REVIEW
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Family Portraits -->
+              <div class="feedback-slide" data-index="2">
+                <div class="feedback-col-profile">
+                  <span class="feedback-category-tag">GENERATIONAL FAMILY SESSION</span>
+                  <div class="feedback-user-row">
+                    <img src="assets/images/family/family-newborn-parents-bw.jpg" alt="Smitha & Chandan" class="feedback-avatar">
+                    <div class="feedback-user-meta">
+                      <h4 class="feedback-author-name">Smitha &amp; Chandan</h4>
+                      <p class="feedback-author-role">Family Portraiture</p>
+                      <p class="feedback-author-loc">Adoni, Andhra Pradesh</p>
+                    </div>
+                  </div>
+                  <div class="feedback-stars" aria-label="5 out of 5 stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>
+                  <div class="feedback-satisfaction-badge">
+                    <span class="dot-green"></span> RESULT &bull; 100% SATISFACTION
+                  </div>
+                  
+                  <div class="feedback-left-divider"></div>
+
+                  <div class="feedback-nav-row">
+                    <span class="feedback-counter"><strong class="counter-curr">03</strong> <span class="counter-slash">/</span> <span class="counter-total">04</span></span>
+                    <div class="feedback-arrow-btns">
+                      <button class="feedback-btn-prev" aria-label="Previous feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                      </button>
+                      <button class="feedback-btn-next" aria-label="Next feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feedback-col-quote">
+                  <div class="feedback-quote-mark" aria-hidden="true">
+                    <svg width="42" height="34" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                  </div>
+                  <blockquote class="feedback-quote-text">
+                    "Capturing three generations together was an <span class="feedback-highlight">unforgettable experience</span>. The monochrome portraits brought tears of joy to our parents, and the 3D hand casts preserved every tiny detail. <span class="feedback-highlight">Exceptional studio artistry!</span>"
+                  </blockquote>
+                  <div class="feedback-verified-tag">
+                    <span class="verified-dash">—</span> VERIFIED FAMILY REVIEW
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Pre-Birthday -->
+              <div class="feedback-slide" data-index="3">
+                <div class="feedback-col-profile">
+                  <span class="feedback-category-tag">FIRST BIRTHDAY MILESTONE</span>
+                  <div class="feedback-user-row">
+                    <img src="assets/images/pre-birthday/pre-birthday-toddler-bmw-night.jpg" alt="Sneha & Vikram" class="feedback-avatar">
+                    <div class="feedback-user-meta">
+                      <h4 class="feedback-author-name">Sneha &amp; Vikram</h4>
+                      <p class="feedback-author-role">Milestone &amp; Kids</p>
+                      <p class="feedback-author-loc">Adoni, Andhra Pradesh</p>
+                    </div>
+                  </div>
+                  <div class="feedback-stars" aria-label="5 out of 5 stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>
+                  <div class="feedback-satisfaction-badge">
+                    <span class="dot-green"></span> RESULT &bull; 100% SATISFACTION
+                  </div>
+                  
+                  <div class="feedback-left-divider"></div>
+
+                  <div class="feedback-nav-row">
+                    <span class="feedback-counter"><strong class="counter-curr">04</strong> <span class="counter-slash">/</span> <span class="counter-total">04</span></span>
+                    <div class="feedback-arrow-btns">
+                      <button class="feedback-btn-prev" aria-label="Previous feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                      </button>
+                      <button class="feedback-btn-next" aria-label="Next feedback">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feedback-col-quote">
+                  <div class="feedback-quote-mark" aria-hidden="true">
+                    <svg width="42" height="34" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                  </div>
+                  <blockquote class="feedback-quote-text">
+                    "The customized theme setup was <span class="feedback-highlight">truly magical!</span> Our toddler had so much fun driving around, and the photographer captured genuine laughter and excitement without any forced poses. <span class="feedback-highlight">Highly recommended!</span>"
+                  </blockquote>
+                  <div class="feedback-verified-tag">
+                    <span class="verified-dash">—</span> VERIFIED PARENT REVIEW
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Pagination Dots (Matching media_1790963351309.png) -->
+            <div class="feedback-dots-nav" aria-label="Feedback navigation dots">
+              <button class="feedback-dot" data-slide="0" aria-label="Feedback 1"></button>
+              <button class="feedback-dot active" data-slide="1" aria-label="Feedback 2"></button>
+              <button class="feedback-dot" data-slide="2" aria-label="Feedback 3"></button>
+              <button class="feedback-dot" data-slide="3" aria-label="Feedback 4"></button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 06: Contact & Direct Concierge (#contact)
+         ========================================================================== -->
+    <section class="contact-unified-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="subheading">Direct Concierge</span>
+          <h2 class="heading-1">Connect Directly With Our Studio</h2>
+          <p class="section-description" style="max-width: 680px; margin: 1rem auto 0; text-align: center;">
+            No complicated forms or waiting queues. Connect directly with our studio team via your preferred communication channel.
+          </p>
+        </div>
+
+        <div class="contact-unified-grid">
+          
+          <!-- Channel 1: WhatsApp -->
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon icon-wa-green">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">WhatsApp Concierge</h3>
+            <p class="contact-channel-desc">
+              Immediate response for available dates, custom packages, and theme consultations with our studio founder.
+            </p>
+            <a href="https://wa.link/6e8b0e" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+              <span>Chat on WhatsApp</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Channel 2: Phone Call -->
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon icon-phone-terra">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">Direct Phone Line</h3>
+            <p class="contact-channel-desc">
+              Speak directly with our photography team for urgent questions, weekend availability, and studio visits.
+            </p>
+            <a href="tel:+919441005963" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <span>Call +91 94410 05963</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Channel 3: Instagram -->
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon icon-ig-gradient">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">Instagram Community</h3>
+            <p class="contact-channel-desc">
+              Follow 2,400+ parents, watch behind-the-scenes reels, and view recently completed client newborn setups.
+            </p>
+            <a href="https://www.instagram.com/adoni_kids_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+              <span>@adoni_kids_studio</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Dedicated Location & Studio Map Section
+         ========================================================================== -->
+    <section class="location-section" id="location">
+      <div class="container">
+        
+        <div class="location-layout-grid">
+          
+          <!-- Left Column: Address, Visiting Hours, Landmarks & Directions CTA -->
+          <div class="location-address-card">
+            <div>
+              <span class="subheading">Physical Studio Location</span>
+              <h2 class="heading-2" style="font-size: 2.2rem; margin-top: 0.25rem;">Visit Our Adoni Studio</h2>
+              <p class="location-lead">
+                A serene, baby-led sanctuary designed specifically for infants, expecting mothers, and generational families. Purpose-built with temperature-controlled posing suites and private nursing lounges.
+              </p>
+
+              <!-- Exact Studio Address Block -->
+              <div class="location-exact-address">
+                <div class="location-pin-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="location-text">
+                  <span class="location-label">Official Studio Address</span>
+                  <address class="exact-address-block">
+                    Shanti Estate, Vimala Regency New Five Star,<br>
+                    Hotel Road, Near Mahima Church,<br>
+                    Adoni, Andhra Pradesh – 518301, India
+                  </address>
+                </div>
+              </div>
+
+              <!-- Landmark & Hours Highlights -->
+              <div class="location-landmarks">
+                <div class="landmark-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                  <div>
+                    <strong>Studio Visiting Hours</strong>
+                    <span>Monday – Saturday: 9:30 AM – 7:00 PM | Sunday: 10:00 AM – 5:00 PM</span>
+                  </div>
+                </div>
+
+                <div class="landmark-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                  <div>
+                    <strong>Landmark Guidance</strong>
+                    <span>Near Mahima Church, Hotel Road, Adoni</span>
+                  </div>
+                </div>
+
+                <div class="landmark-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <div>
+                    <strong>Private Sessions Only</strong>
+                    <span>One family hosted at a time with hospital-grade sanitization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons: Get Directions & WhatsApp Concierge -->
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Shanti+Estate,+Vimala+Regency+New+Five+Star,+Hotel+Road,+Near+Mahima+Church,+Adoni,+Andhra+Pradesh+518301,+India" target="_blank" rel="noopener noreferrer" class="btn btn-directions">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                </svg>
+                <span>Get Directions</span>
+              </a>
+
+              <a href="https://wa.link/6e8b0e" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>Book Private Visit</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Google Maps Embed -->
+          <div class="map-embed-wrapper">
+            <div class="map-embed-header">
+              <div class="map-title-bar">
+                <span class="map-status-indicator"></span>
+                <span>Google Maps • Adoni Kids Studio Location</span>
+              </div>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Shanti+Estate,+Vimala+Regency+New+Five+Star,+Hotel+Road,+Near+Mahima+Church,+Adoni,+Andhra+Pradesh+518301,+India" target="_blank" rel="noopener noreferrer" class="map-open-link" title="Open in Google Maps">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>Open in Maps</span>
+              </a>
+            </div>
+            <div class="map-iframe-container">
+              <iframe 
+                src="https://maps.google.com/maps?q=Shanti+Estate,+Vimala+Regency+New+Five+Star,+Hotel+Road,+Near+Mahima+Church,+Adoni,+Andhra+Pradesh+518301,+India&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Adoni Kids Studio Location Map">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <!-- ==========================================================================
+       Site Footer (Reference: media_1791100635383.png)
+       ========================================================================== -->
+  <footer class="site-footer">
+    
+    <!-- Pre-Footer Banner Ribbon (Matching User Reference) -->
+    <div class="footer-pre-banner-wrap">
+      <div class="container">
+        <div class="footer-pre-banner">
+          <span>PREMIUM BOOKING EXPERIENCE FOR NEWBORN, MATERNITY, FAMILY, AND BESPOKE KEEPSAKES</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid-simple">
+        
+        <!-- Column 1: Brand & Direct Social Actions -->
+        <div class="footer-col-brand">
+          <span class="footer-brand-title">Adoni Kids Studio</span>
+          <span class="footer-brand-tagline">LUXURY PHOTOGRAPHY ATELIER</span>
+          <p class="footer-description">
+            Crafting timeless newborn memories, luxury maternity portraits, and emotional family stories with authentic art &amp; cinematic detail.
+          </p>
+          <div class="footer-action-pills">
+            <a href="https://www.instagram.com/adoni_kids_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="footer-pill-btn footer-pill-instagram" aria-label="Instagram Profile @adoni_kids_studio">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              <span>Instagram</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+            </a>
+            <a href="https://wa.link/6e8b0e" target="_blank" rel="noopener noreferrer" class="footer-pill-btn footer-pill-whatsapp" aria-label="WhatsApp Concierge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col-nav">
+          <h4 class="footer-heading-gold">Navigation</h4>
+          <ul class="footer-simple-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#experience">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Get in Touch -->
+        <div class="footer-col-contact">
+          <h4 class="footer-heading-gold">Get in Touch</h4>
+          <div class="footer-contact-simple-list">
+            <div class="footer-contact-simple-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="gold-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span class="contact-label-gold">STUDIO ADDRESS</span>
+                <p>Shanti Estate, Hotel Road, Near Mahima Church, Adoni, Andhra Pradesh</p>
+              </div>
+            </div>
+
+            <div class="footer-contact-simple-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="gold-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <span class="contact-label-gold">CALL / WHATSAPP</span>
+                <a href="tel:+919441005963" class="contact-value-strong">+91 94410 05963</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-simple-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="gold-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <span class="contact-label-gold">EMAIL INQUIRIES</span>
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-simple">
+        <p>&copy; 2026 Adoni Kids Studio. All rights reserved.</p>
+        <div class="footer-bottom-right">
+          <span class="crafted-by">Crafted with &#10084;&#65039;</span>
+          <button class="footer-top-btn" id="footerTopBtn" aria-label="Scroll to top of page">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+            <span>Top</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Editorial Lightbox Modal
+       ========================================================================== -->
+  <div class="lightbox-modal" id="studioLightbox" role="dialog" aria-modal="true" aria-label="Photo View">
+    <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous Photo">&#10094;</button>
+    <button class="lightbox-next" aria-label="Next Photo">&#10095;</button>
+    <div class="lightbox-container">
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="" class="lightbox-image">
+      </div>
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+  <!-- Fixed Floating Contact Buttons (Instagram, Phone, WhatsApp) -->
+  <aside class="floating-contact-group" aria-label="Floating Studio Contact Concierge">
+    <!-- 0. Top / Home Button (Quick scroll to hero) -->
+    <a href="#hero" 
+       id="scrollTopBtn" 
+       class="floating-contact-btn btn-scroll-top" 
+       aria-label="Back to Top / Home Page">
+      <span class="floating-contact-tooltip">Back to Top</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </a>
+
+    <!-- 0.5. Portfolio / Layers Button (Reference: media_1791100635383.png) -->
+    <a href="#portfolio" 
+       class="floating-contact-btn btn-portfolio-float" 
+       aria-label="View Portfolios">
+      <span class="floating-contact-tooltip">Portfolio</span>
+      <span class="floating-sparkle-badge" aria-hidden="true">&#10024;</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+    </a>
+
+    <!-- 1. Instagram -->
+    <a href="https://www.instagram.com/adoni_kids_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-contact-btn btn-instagram-float" 
+       aria-label="Instagram Profile @adoni_kids_studio">
+      <span class="floating-contact-tooltip">Instagram</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    </a>
+
+    <!-- 2. Phone Dialer -->
+    <a href="tel:+919441005963" 
+       class="floating-contact-btn btn-phone-float" 
+       aria-label="Call Adoni Kids Studio (+91 94410 05963)">
+      <span class="floating-contact-tooltip">Call</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+
+    <!-- 3. WhatsApp Chat -->
+    <a href="https://wa.link/6e8b0e" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-contact-btn btn-whatsapp-float" 
+       aria-label="Chat with Adoni Kids Studio on WhatsApp">
+      <span class="floating-contact-tooltip">WhatsApp</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- JavaScript Modules -->
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

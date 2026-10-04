@@ -1,0 +1,18 @@
+# Reference video & raw upload folders (not used on website)
+video-1.mp4
+New folder/
+New folder (2)/
+New folder (4)/
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.tmp
+*.log
+
+# Editor folders
+.vscode/
+.idea/

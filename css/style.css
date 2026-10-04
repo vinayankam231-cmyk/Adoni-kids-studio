@@ -1,0 +1,438 @@
+/* ==========================================================================
+   ADONI KIDS STUDIO — Core Design System & Global Styles
+   Luxury Newborn, Maternity, Kids & Family Photography Studio
+   Color Palette (Exact filmsbymateti.co.in Reference):
+   Background: #F5F0E8 — Warm Cream / Ivory
+   Primary Text: #1A1A1A — Rich Espresso
+   Accent / Gold: #C9A96E — Signature Warm Gold / Champagne
+   Secondary Sections: #EDE4D6 — Warm Sandy Beige
+   White: #FFFFFF
+   Dark Footer / Surfaces: #2A2520 — Warm Espresso Dark Brown
+   Typography: Playfair Display (Headings) & DM Sans (Body & Navigation)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  /* Rich Warm Luxury Photography Palette (Wine Red Accent + Warm Neutrals) */
+  --color-primary: #8F1730;          /* Deep rich wine red accent */
+  --color-primary-hover: #A8203B;    /* Luminous wine red hover */
+  --color-primary-light: rgba(143, 23, 48, 0.08); /* Soft blush/rose tint */
+  --color-primary-glow: rgba(143, 23, 48, 0.28);
+  
+  --color-bg-primary: #F5F0E8;       /* Warm Ivory */
+  --color-bg-secondary: #EDE4D6;     /* Warm Sandy Beige */
+  --color-bg-card: #FFFFFF;          /* Pure White */
+  --color-bg-card-subtle: #FFFDF9;   /* Warm White */
+  --color-bg-dark: #211916;          /* Dark Espresso */
+  --color-bg-dark-card: #2C221E;     /* Deep Espresso Card */
+  --color-bg-cinematic: #17110F;     /* Cinematic Near-Black */
+  
+  --color-text-main: #211916;        /* Dark Espresso Headings & Primary Text */
+  --color-text-muted: #6B625B;       /* Warm Earthy Taupe / Muted Brown */
+  --color-text-light: #948A80;       /* Soft Taupe Neutral */
+  --color-text-inverse: #F5F0E8;     /* Warm Ivory on Dark */
+  
+  /* Luxury Accents */
+  --color-accent: #8F1730;           /* Wine Red Primary Accent */
+  --color-accent-hover: #A8203B;     /* Wine Red Hover */
+  --color-accent-light: rgba(143, 23, 48, 0.1);
+  --color-rose-glow: #FF6B8B;        /* Luminous Rose for Dark Photographic Surfaces */
+  --color-rose-subtle: #FF8A9E;      /* Soft Rose for Footer & Subtitles */
+  --color-champagne: #8F1730;        /* Replaced legacy mustard gold with Wine Red */
+  --color-champagne-light: rgba(143, 23, 48, 0.08);  /* Soft Rose Wash */
+  --color-champagne-dark: #731226;   /* Deep Wine Red */
+  --color-blush: #D7A5A0;            /* Muted Blush */
+  --color-gold: #8F1730;             /* Replaced legacy gold with Wine Red */
+  
+  /* Borders & Dividers */
+  --color-border: #DDD8CE;           /* Warm Natural Cream Border */
+  --color-border-subtle: rgba(143, 23, 48, 0.18);
+  --color-border-hover: rgba(143, 23, 48, 0.45);
+  --color-border-dark: rgba(255, 255, 255, 0.12);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Diffused Luxury Shadows */
+  --shadow-subtle: 0 4px 20px rgba(33, 25, 22, 0.05);
+  --shadow-card: 0 10px 32px rgba(33, 25, 22, 0.08);
+  --shadow-hover: 0 16px 40px rgba(33, 25, 22, 0.14);
+  --shadow-primary: 0 10px 28px rgba(143, 23, 48, 0.32);
+  --shadow-accent: 0 10px 28px rgba(143, 23, 48, 0.30);
+  --shadow-champagne: 0 10px 28px rgba(198, 164, 106, 0.28);
+
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.25s ease;
+
+  /* Layout */
+  --container-max: 1320px;
+  --header-height: 86px;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  line-height: 1.7;
+  font-weight: 400;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Subtle Film Grain Texture for Luxury Editorial Feel */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.015;
+  background-image: radial-gradient(rgba(0,0,0,0.85) 1px, transparent 0);
+  background-size: 4px 4px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Typography Classes */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--color-text-main);
+}
+
+.heading-display {
+  font-size: clamp(2.75rem, 5.8vw, 4.75rem);
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.heading-1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.heading-2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+}
+
+.heading-3 {
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  line-height: 1.25;
+}
+
+.subheading {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.subheading::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.subheading-petrol {
+  color: var(--color-petrol);
+}
+
+.subheading-petrol::before {
+  background-color: var(--color-petrol);
+}
+
+.text-lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-narrow {
+  max-width: 980px;
+}
+
+.section-spacing {
+  padding: 7rem 0;
+}
+
+.section-spacing-sm {
+  padding: 4.5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 3.75rem auto;
+}
+
+.section-header.text-left {
+  text-align: left;
+  margin-left: 0;
+}
+
+.section-header p {
+  margin-top: 1rem;
+}
+
+/* Button & Link Styles (Elevated with Signature Terracotta & Petrol Colors) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2.2rem;
+  font-size: 0.825rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid transparent;
+  white-space: normal;
+  text-align: center;
+}
+
+/* Primary Button: Deep Rich Wine Red CTA (#8F1730) */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(143, 23, 48, 0.28);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 34px rgba(143, 23, 48, 0.42);
+}
+
+/* Button Micro-Interactions: Arrow Movement */
+.btn svg {
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* Secondary Button: Wine Red / Champagne Outline */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(143, 23, 48, 0.25);
+}
+
+/* Luxury Primary Button Alias */
+.btn-gold {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border: 1.5px solid var(--color-primary);
+  box-shadow: 0 8px 24px var(--color-primary-glow);
+}
+
+.btn-gold:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 34px var(--color-primary-glow);
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  border-color: #25D366;
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #28E06E 0%, #159C8D 100%);
+  border-color: #28E06E;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.55);
+}
+
+.btn-sm {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.75rem;
+}
+
+.btn-lg {
+  padding: 1.15rem 2.75rem;
+  font-size: 0.875rem;
+}
+
+.editorial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.825rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.editorial-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: right;
+  transform: scaleX(0.35);
+}
+
+.editorial-link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Badges & Pills */
+.badge-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.15rem;
+  background: rgba(154, 118, 95, 0.1);
+  border: 1px solid rgba(154, 118, 95, 0.28);
+  border-radius: 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  max-width: 100%;
+  white-space: normal;
+}
+
+.badge-luxury svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.badge-champagne {
+  background: rgba(216, 200, 184, 0.25);
+  border: 1px solid rgba(154, 118, 95, 0.32);
+  color: var(--color-accent);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .section-spacing {
+    padding: 5.5rem 0;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding: 4rem 0;
+  }
+  .section-spacing-sm {
+    padding: 3rem 0;
+  }
+  .btn {
+    padding: 0.85rem 1.75rem;
+    font-size: 0.78rem;
+  }
+  .badge-luxury {
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    padding: 0.35rem 0.75rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
