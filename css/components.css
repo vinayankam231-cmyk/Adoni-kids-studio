@@ -374,12 +374,13 @@
   display: block !important;
 }
 
-/* 4. Drawer Footer Action (SELECT YOUR PACKAGE) */
+/* 4. Drawer Footer Action (Enquiry Button) */
 .drawer-footer-action {
   padding-top: 1.5rem;
   margin-top: auto;
 }
 
+.drawer-enquiry-btn,
 .drawer-package-btn {
   display: flex;
   align-items: center;
@@ -395,13 +396,14 @@
   font-family: var(--font-sans);
   font-size: 0.85rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   box-shadow: 0 4px 18px rgba(33, 25, 22, 0.06);
   transition: all 0.25s ease;
   box-sizing: border-box;
 }
 
+.drawer-enquiry-btn:hover,
 .drawer-package-btn:hover {
   background: #F5E3C4;
   border-color: #C6A46A;
@@ -410,6 +412,7 @@
   box-shadow: 0 8px 24px rgba(198, 164, 106, 0.28);
 }
 
+.drawer-enquiry-btn .enquiry-btn-icon,
 .drawer-package-btn .package-btn-icon {
   width: 20px;
   height: 20px;
