@@ -1,0 +1,6 @@
+# Robots.txt for Adoni Kids Studio
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://vinayankam231-cmyk.github.io/Adoni-kids-studio/sitemap.xml
