@@ -3596,6 +3596,12 @@
     grid-template-columns: 1fr;
     gap: 2.25rem;
   }
+  .about-content {
+    order: 1;
+  }
+  .about-image-stage {
+    order: 2;
+  }
   .about-frame-wrapper img {
     height: 380px;
   }
