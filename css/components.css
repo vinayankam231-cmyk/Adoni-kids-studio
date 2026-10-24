@@ -1854,7 +1854,7 @@
   position: fixed;
   bottom: 2rem;
   right: 1.5rem;
-  z-index: 990;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
