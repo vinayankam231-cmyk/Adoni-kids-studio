@@ -4,12 +4,12 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/</loc>
+    <loc>https://adonikidstudio.netlify.app/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/assets/images/og-cover.jpg</image:loc>
+      <image:loc>https://adonikidstudio.netlify.app/assets/images/og-cover.jpg</image:loc>
       <image:title>Adoni Kids Studio Luxury Newborn and Family Photography</image:title>
       <image:caption>Premier fine-art baby, newborn, maternity, and family photography studio in Adoni, Andhra Pradesh</image:caption>
     </image:image>
@@ -17,7 +17,7 @@
 
   <!-- Services & Pricing -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/services.html</loc>
+    <loc>https://adonikidstudio.netlify.app/services.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -25,7 +25,7 @@
 
   <!-- Portfolio Gallery -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/portfolio.html</loc>
+    <loc>https://adonikidstudio.netlify.app/portfolio.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -33,7 +33,7 @@
 
   <!-- The Studio Experience & Estimator -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/experience.html</loc>
+    <loc>https://adonikidstudio.netlify.app/experience.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -41,7 +41,7 @@
 
   <!-- About The Studio -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/about.html</loc>
+    <loc>https://adonikidstudio.netlify.app/about.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -49,7 +49,7 @@
 
   <!-- Contact & Studio Location -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/contact.html</loc>
+    <loc>https://adonikidstudio.netlify.app/contact.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -57,7 +57,7 @@
 
   <!-- Client Proofing Galleries -->
   <url>
-    <loc>https://vinayankam231-cmyk.github.io/Adoni-kids-studio/client-galleries.html</loc>
+    <loc>https://adonikidstudio.netlify.app/client-galleries.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

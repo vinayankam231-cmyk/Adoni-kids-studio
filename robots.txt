@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://vinayankam231-cmyk.github.io/Adoni-kids-studio/sitemap.xml
+Sitemap: https://adonikidstudio.netlify.app/sitemap.xml
