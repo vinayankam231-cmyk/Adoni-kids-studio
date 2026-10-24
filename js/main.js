@@ -350,8 +350,8 @@ function initHeroSlideshow() {
   let currentIndex = 0;
   let isTransitioning = false;
   let autoPlayTimer = null;
-  const DURATION = 1000;
-  const INTERVAL = 4500;
+  const DURATION = 600;
+  const INTERVAL = 2800;
 
   function goToSlide(index, animated = true) {
     if (isTransitioning) return;
