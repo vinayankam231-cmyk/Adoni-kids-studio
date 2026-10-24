@@ -2,50 +2,52 @@
    ADONI KIDS STUDIO — Core Design System & Global Styles
    Luxury Newborn, Maternity, Kids & Family Photography Studio
    Color Palette:
-   - Background: #FAFAF7 (Warm off-white)
-   - Cards and surfaces: #FFFFFF (Clean crisp white)
-   - Alternate sections: #F0EDE6 (Warm oatmeal / sand greige)
-   - Text and headings: #111111 (Deep rich charcoal black)
-   - Accent / Buttons: #B98282 (Signature Dusty Rose)
+   - Primary Background: Warm Cream (#FAF7F2)
+   - Secondary Surfaces & Subtle Contrast: Soft Blush (#F3E5E0)
+   - Primary Typography & Dark Surfaces: Warm Charcoal (#2C2927)
+   - Muted Body Text & Structural Borders: Taupe (#756B65)
+   - Primary CTA & Accent: Dusty Rose (#B98282 → Hover #A56F6F)
+   - Heirloom & Milestone Touch: Champagne (#C9A98A)
+   - Clean Card Surfaces: White (#FFFFFF)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  /* Signature Dusty Rose Accent System */
-  --color-primary: #B98282;          /* Signature Dusty Rose */
+  /* Exact User Color Palette */
+  --color-primary: #B98282;          /* Primary CTA: Dusty Rose */
   --color-primary-hover: #A56F6F;    /* Deeper Dusty Rose Hover */
   --color-primary-light: rgba(185, 130, 130, 0.10); /* Soft Dusty Rose Tint */
   --color-primary-glow: rgba(185, 130, 130, 0.28);
   
-  --color-bg-primary: #FAFAF7;       /* Background: Warm Minimal Off-White */
-  --color-bg-secondary: #F0EDE6;     /* Alternate Sections: Warm Greige */
-  --color-bg-card: #FFFFFF;          /* Cards and surfaces: Pure Crisp White */
-  --color-bg-card-subtle: #FAFAF7;   /* Subtle Surface */
-  --color-bg-dark: #111111;          /* Deep Black Underlay */
-  --color-bg-dark-card: #FFFFFF;     /* Pure White Card */
-  --color-bg-cinematic: #111111;     /* Fullscreen Dark Underlay */
+  --color-bg-primary: #FAF7F2;       /* Primary Background: Warm Cream */
+  --color-bg-secondary: #F3E5E0;     /* Secondary Surfaces: Soft Blush */
+  --color-bg-card: #FFFFFF;          /* Clean Card Surfaces: Pure White */
+  --color-bg-card-subtle: #FAF7F2;   /* Subtle Warm Cream Tint */
+  --color-bg-dark: #2C2927;          /* Dark Surfaces: Warm Charcoal */
+  --color-bg-dark-card: #383431;     /* Warm Charcoal Card */
+  --color-bg-cinematic: #211D1B;     /* Cinematic Near-Dark */
   
-  --color-text-main: #111111;        /* Text & Headings: Deep Rich Black */
-  --color-text-muted: rgba(17, 17, 17, 0.65); /* Elegant Muted Body */
-  --color-text-light: rgba(17, 17, 17, 0.45); /* Soft Subtext */
-  --color-text-inverse: #FFFFFF;     /* Pure White on Dark */
+  --color-text-main: #2C2927;        /* Primary Typography: Warm Charcoal */
+  --color-text-muted: #756B65;       /* Muted Body Text: Taupe */
+  --color-text-light: #9B918B;       /* Soft Taupe Neutral */
+  --color-text-inverse: #FAF7F2;     /* Warm Cream on Dark */
   
-  /* Dusty Rose Accents (Replacing harsh black with soft dusty rose) */
+  /* Signature Accents */
   --color-accent: #B98282;           /* Dusty Rose Primary Accent */
   --color-accent-hover: #A56F6F;     /* Dusty Rose Hover */
   --color-accent-light: rgba(185, 130, 130, 0.10);
-  --color-rose-glow: #B98282;        /* Dusty Rose Glow */
-  --color-rose-subtle: #B98282;      /* Dusty Rose Subtle */
-  --color-champagne: #B98282;        /* Dusty Rose Accent */
-  --color-champagne-light: rgba(185, 130, 130, 0.10);
-  --color-champagne-dark: #A56F6F;
-  --color-blush: rgba(185, 130, 130, 0.12);
-  --color-gold: #B98282;
+  --color-champagne: #C9A98A;        /* Heirloom Touch: Champagne */
+  --color-champagne-light: #F6F0EA;  /* Champagne Wash */
+  --color-champagne-dark: #A88768;   /* Deep Champagne */
+  --color-gold: #C9A98A;             /* Champagne Gold */
+  --color-blush: #F3E5E0;            /* Soft Blush */
+  --color-rose-glow: #B98282;
+  --color-rose-subtle: #B98282;
   
   /* Borders & Dividers */
-  --color-border: rgba(17, 17, 17, 0.10);
-  --color-border-subtle: rgba(185, 130, 130, 0.20);
+  --color-border: #E8DDD8;           /* Structural Borders: Soft Taupe/Blush */
+  --color-border-subtle: rgba(185, 130, 130, 0.18);
   --color-border-hover: rgba(185, 130, 130, 0.45);
   --color-border-dark: rgba(255, 255, 255, 0.12);
 
@@ -54,12 +56,12 @@
   --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Diffused Luxury Shadows */
-  --shadow-subtle: 0 4px 20px rgba(17, 17, 17, 0.04);
-  --shadow-card: 0 10px 32px rgba(17, 17, 17, 0.06);
-  --shadow-hover: 0 16px 40px rgba(17, 17, 17, 0.10);
+  --shadow-subtle: 0 4px 20px rgba(44, 41, 39, 0.04);
+  --shadow-card: 0 10px 32px rgba(44, 41, 39, 0.06);
+  --shadow-hover: 0 16px 40px rgba(44, 41, 39, 0.10);
   --shadow-primary: 0 10px 28px rgba(185, 130, 130, 0.28);
   --shadow-accent: 0 10px 28px rgba(185, 130, 130, 0.28);
-  --shadow-champagne: 0 10px 28px rgba(185, 130, 130, 0.25);
+  --shadow-champagne: 0 10px 28px rgba(201, 169, 138, 0.28);
 
   /* Transitions */
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -400,9 +402,9 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 }
 
 .badge-champagne {
-  background: rgba(185, 130, 130, 0.12);
-  border: 1px solid rgba(185, 130, 130, 0.28);
-  color: var(--color-accent);
+  background: rgba(201, 169, 138, 0.20);
+  border: 1px solid rgba(201, 169, 138, 0.40);
+  color: #A88768;
 }
 
 /* Responsive Breakpoints */
