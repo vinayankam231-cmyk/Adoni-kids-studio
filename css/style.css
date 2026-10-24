@@ -1,27 +1,28 @@
 /* ==========================================================================
    ADONI KIDS STUDIO — Core Design System & Global Styles
-   Strict 4-Color Luxury Photography Atelier Palette:
+   Luxury Newborn, Maternity, Kids & Family Photography Studio
+   Color Palette:
    - Background: #FAFAF7 (Warm off-white)
    - Cards and surfaces: #FFFFFF (Clean crisp white)
    - Alternate sections: #F0EDE6 (Warm oatmeal / sand greige)
    - Text and headings: #111111 (Deep rich charcoal black)
-   Zero gold, yellow, champagne, or new accent colors.
+   - Accent / Buttons: #B98282 (Signature Dusty Rose)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  /* Strict 4-Color Palette Values */
-  --color-primary: #111111;          /* Deep rich black */
-  --color-primary-hover: #2A2A2A;    /* Soft charcoal hover */
-  --color-primary-light: rgba(17, 17, 17, 0.05);
-  --color-primary-glow: rgba(17, 17, 17, 0.12);
+  /* Signature Dusty Rose Accent System */
+  --color-primary: #B98282;          /* Signature Dusty Rose */
+  --color-primary-hover: #A56F6F;    /* Deeper Dusty Rose Hover */
+  --color-primary-light: rgba(185, 130, 130, 0.10); /* Soft Dusty Rose Tint */
+  --color-primary-glow: rgba(185, 130, 130, 0.28);
   
   --color-bg-primary: #FAFAF7;       /* Background: Warm Minimal Off-White */
   --color-bg-secondary: #F0EDE6;     /* Alternate Sections: Warm Greige */
   --color-bg-card: #FFFFFF;          /* Cards and surfaces: Pure Crisp White */
   --color-bg-card-subtle: #FAFAF7;   /* Subtle Surface */
-  --color-bg-dark: #111111;          /* Deep Black */
+  --color-bg-dark: #111111;          /* Deep Black Underlay */
   --color-bg-dark-card: #FFFFFF;     /* Pure White Card */
   --color-bg-cinematic: #111111;     /* Fullscreen Dark Underlay */
   
@@ -30,23 +31,23 @@
   --color-text-light: rgba(17, 17, 17, 0.45); /* Soft Subtext */
   --color-text-inverse: #FFFFFF;     /* Pure White on Dark */
   
-  /* Minimalist Monochromatic Accents (No gold, yellow, champagne, or wine) */
-  --color-accent: #111111;
-  --color-accent-hover: #2A2A2A;
-  --color-accent-light: rgba(17, 17, 17, 0.05);
-  --color-rose-glow: rgba(17, 17, 17, 0.12);
-  --color-rose-subtle: rgba(17, 17, 17, 0.55);
-  --color-champagne: #111111;
-  --color-champagne-light: rgba(17, 17, 17, 0.05);
-  --color-champagne-dark: #111111;
-  --color-blush: #F0EDE6;
-  --color-gold: #111111;
+  /* Dusty Rose Accents (Replacing harsh black with soft dusty rose) */
+  --color-accent: #B98282;           /* Dusty Rose Primary Accent */
+  --color-accent-hover: #A56F6F;     /* Dusty Rose Hover */
+  --color-accent-light: rgba(185, 130, 130, 0.10);
+  --color-rose-glow: #B98282;        /* Dusty Rose Glow */
+  --color-rose-subtle: #B98282;      /* Dusty Rose Subtle */
+  --color-champagne: #B98282;        /* Dusty Rose Accent */
+  --color-champagne-light: rgba(185, 130, 130, 0.10);
+  --color-champagne-dark: #A56F6F;
+  --color-blush: rgba(185, 130, 130, 0.12);
+  --color-gold: #B98282;
   
   /* Borders & Dividers */
   --color-border: rgba(17, 17, 17, 0.10);
-  --color-border-subtle: rgba(17, 17, 17, 0.06);
-  --color-border-hover: rgba(17, 17, 17, 0.25);
-  --color-border-dark: rgba(17, 17, 17, 0.15);
+  --color-border-subtle: rgba(185, 130, 130, 0.20);
+  --color-border-hover: rgba(185, 130, 130, 0.45);
+  --color-border-dark: rgba(255, 255, 255, 0.12);
 
   /* Typography */
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -56,9 +57,9 @@
   --shadow-subtle: 0 4px 20px rgba(17, 17, 17, 0.04);
   --shadow-card: 0 10px 32px rgba(17, 17, 17, 0.06);
   --shadow-hover: 0 16px 40px rgba(17, 17, 17, 0.10);
-  --shadow-primary: 0 8px 24px rgba(17, 17, 17, 0.15);
-  --shadow-accent: 0 8px 24px rgba(17, 17, 17, 0.15);
-  --shadow-champagne: 0 8px 24px rgba(17, 17, 17, 0.12);
+  --shadow-primary: 0 10px 28px rgba(185, 130, 130, 0.28);
+  --shadow-accent: 0 10px 28px rgba(185, 130, 130, 0.28);
+  --shadow-champagne: 0 10px 28px rgba(185, 130, 130, 0.25);
 
   /* Transitions */
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -264,19 +265,19 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   text-align: center;
 }
 
-/* Primary Button: Deep Minimal Charcoal Black (#111111) */
+/* Primary Button: Signature Dusty Rose (#B98282) */
 .btn-primary {
-  background-color: #111111;
+  background-color: var(--color-primary);
   color: #FFFFFF;
-  border-color: #111111;
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.15);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(185, 130, 130, 0.28);
 }
 
 .btn-primary:hover {
-  background-color: #2A2A2A;
-  border-color: #2A2A2A;
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 14px 34px rgba(17, 17, 17, 0.25);
+  box-shadow: 0 14px 34px rgba(185, 130, 130, 0.40);
 }
 
 /* Button Micro-Interactions: Arrow Movement */
@@ -288,48 +289,48 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   transform: translateX(4px);
 }
 
-/* Secondary Button: Clean Black Outline */
+/* Secondary Button: Dusty Rose Outline */
 .btn-secondary {
   background-color: transparent;
-  color: #111111;
-  border-color: #111111;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn-secondary:hover {
-  background-color: #111111;
+  background-color: var(--color-primary);
   color: #FFFFFF;
-  border-color: #111111;
+  border-color: var(--color-primary);
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 10px 28px rgba(17, 17, 17, 0.18);
+  box-shadow: 0 10px 28px rgba(185, 130, 130, 0.25);
 }
 
 /* Luxury Primary Button Alias */
 .btn-gold {
-  background-color: #111111;
+  background-color: var(--color-primary);
   color: #FFFFFF;
-  border: 1.5px solid #111111;
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.15);
+  border: 1.5px solid var(--color-primary);
+  box-shadow: 0 8px 24px rgba(185, 130, 130, 0.28);
 }
 
 .btn-gold:hover {
-  background-color: #2A2A2A;
-  border-color: #2A2A2A;
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 14px 34px rgba(17, 17, 17, 0.25);
+  box-shadow: 0 14px 34px rgba(185, 130, 130, 0.40);
 }
 
 .btn-whatsapp {
-  background-color: #111111;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: #FFFFFF;
-  border-color: #111111;
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.15);
+  border-color: #25D366;
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
 }
 
 .btn-whatsapp:hover {
-  background-color: #2A2A2A;
-  border-color: #2A2A2A;
+  background: linear-gradient(135deg, #28E06E 0%, #159C8D 100%);
+  border-color: #28E06E;
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px rgba(17, 17, 17, 0.25);
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.55);
 }
 
 .btn-sm {
@@ -351,7 +352,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--color-accent);
   position: relative;
   padding-bottom: 4px;
 }
@@ -363,7 +364,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #111111;
+  background-color: var(--color-accent);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform-origin: right;
   transform: scaleX(0.35);
@@ -380,14 +381,14 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   align-items: center;
   gap: 0.5rem;
   padding: 0.45rem 1.15rem;
-  background: #FFFFFF;
-  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: rgba(185, 130, 130, 0.10);
+  border: 1px solid rgba(185, 130, 130, 0.28);
   border-radius: 40px;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--color-accent);
   max-width: 100%;
   white-space: normal;
 }
@@ -399,9 +400,9 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 }
 
 .badge-champagne {
-  background: #F0EDE6;
-  border: 1px solid rgba(17, 17, 17, 0.12);
-  color: #111111;
+  background: rgba(185, 130, 130, 0.12);
+  border: 1px solid rgba(185, 130, 130, 0.28);
+  color: var(--color-accent);
 }
 
 /* Responsive Breakpoints */

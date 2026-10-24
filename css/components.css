@@ -6,8 +6,7 @@
    Text & Headings: #111111 — Deep Charcoal Black
    Cards & Surfaces: #FFFFFF — Clean White
    Alternate Sections: #F0EDE6 — Warm Greige
-   White: #FFFFFF
-   Zero Accent Colors: Strictly 4-Color Palette
+   Accent / Buttons: #B98282 — Signature Dusty Rose
    ========================================================================== */
 
 /* ==========================================================================
@@ -82,7 +81,7 @@
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--color-primary, #111111);
+  color: var(--color-accent, #B98282);
 }
 
 .nav-link:hover::after, .nav-link.active::after {
@@ -223,7 +222,7 @@
   font-family: var(--font-serif);
   font-size: 1.55rem;
   font-weight: 700;
-  color: #111111;
+  color: #B98282;
   letter-spacing: -0.01em;
   line-height: 1.15;
 }
@@ -257,10 +256,10 @@
 
 .drawer-close-btn:hover {
   background: #FFFFFF;
-  color: #111111;
+  color: #B98282;
   transform: scale(1.08);
-  box-shadow: 0 4px 16px rgba(17, 17, 17, 0.10);
-  border-color: rgba(17, 17, 17, 0.2);
+  box-shadow: 0 4px 16px rgba(185, 130, 130, 0.20);
+  border-color: rgba(185, 130, 130, 0.35);
 }
 
 /* 2. Navigation Section Label */
@@ -331,7 +330,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #111111;
+  background-color: #B98282;
   margin-left: auto;
   margin-right: 0.35rem;
   display: none;
@@ -345,28 +344,28 @@
 }
 
 .drawer-nav-item:hover .drawer-item-icon {
-  color: #111111;
+  color: #B98282;
 }
 
 .drawer-nav-item:hover .drawer-item-label {
-  color: #111111;
+  color: #B98282;
 }
 
 /* ACTIVE STATE (Matching media_1791101536424.png) */
 .drawer-nav-item.active {
   background: #FFFFFF !important;
-  border-color: rgba(17, 17, 17, 0.15) !important;
+  border-color: rgba(185, 130, 130, 0.3) !important;
   transform: none !important;
 }
 
 .drawer-nav-item.active .drawer-item-icon {
-  background: #111111 !important; color: #FFFFFF !important;
+  background: #B98282 !important; color: #FFFFFF !important;
   color: #FFFFFF !important;
-  box-shadow: 0 4px 12px rgba(17, 17, 17, 0.15);
+  box-shadow: 0 4px 12px rgba(185, 130, 130, 0.35);
 }
 
 .drawer-nav-item.active .drawer-item-label {
-  color: #111111 !important;
+  color: #B98282 !important;
   font-weight: 700;
 }
 
@@ -387,8 +386,8 @@
   gap: 0.75rem;
   width: 100%;
   padding: 0.95rem 1.25rem;
-  background: #111111;
-  border: 1px solid #111111;
+  background: #25D366;
+  border: 1px solid rgba(37, 211, 102, 0.4);
   border-radius: 16px;
   color: #FFFFFF;
   text-decoration: none;
@@ -397,16 +396,16 @@
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  box-shadow: 0 6px 20px rgba(17, 17, 17, 0.15);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.32);
   transition: all 0.25s ease;
   box-sizing: border-box;
 }
 
 .drawer-whatsapp-btn:hover {
-  background: #2A2A2A;
+  background: #20BD5A;
   color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgba(17, 17, 17, 0.25);
+  box-shadow: 0 8px 26px rgba(37, 211, 102, 0.45);
 }
 
 .drawer-whatsapp-btn .drawer-wa-icon {
@@ -442,10 +441,10 @@
 .drawer-enquiry-btn:hover,
 .drawer-package-btn:hover {
   background: #FFFFFF;
-  border-color: #111111;
-  color: #111111;
+  border-color: #B98282;
+  color: #B98282;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.15);
+  box-shadow: 0 8px 24px rgba(185, 130, 130, 0.25);
 }
 
 .drawer-enquiry-btn .enquiry-btn-icon,
@@ -1415,7 +1414,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #111111;
+  color: #B98282;
   display: inline-block;
 }
 
@@ -1484,8 +1483,8 @@
 }
 
 .footer-pill-instagram:hover {
-  background: #111111;
-  border-color: #111111;
+  background: #B98282;
+  border-color: #B98282;
   transform: translateY(-2px);
   color: #FFFFFF;
 }
@@ -1497,11 +1496,11 @@
 }
 
 .footer-pill-whatsapp:hover {
-  background: #111111;
+  background: #25D366;
   color: #FFFFFF;
-  border-color: #111111;
+  border-color: #25D366;
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(17, 17, 17, 0.15);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
 }
 
 /* Headings */
@@ -1511,7 +1510,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #111111;
+  color: #B98282;
   margin-bottom: 1.5rem;
 }
 
@@ -1533,7 +1532,7 @@
 }
 
 .footer-simple-links a:hover {
-  color: #111111;
+  color: #B98282;
   padding-left: 4px;
 }
 
@@ -1551,8 +1550,8 @@
 }
 
 .footer-contact-simple-item .gold-icon {
-  color: #111111;
-  stroke: #111111;
+  color: #B98282;
+  stroke: #B98282;
   flex-shrink: 0;
   margin-top: 3px;
 }
@@ -1563,7 +1562,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #111111;
+  color: #B98282;
   margin-bottom: 2px;
 }
 
@@ -1582,7 +1581,7 @@
 }
 
 .footer-contact-simple-item a:hover {
-  color: #333333;
+  color: #B98282;
   text-decoration: underline;
 }
 
@@ -1631,16 +1630,11 @@
 }
 
 .footer-top-btn:hover {
-  background: #111111;
+  background: #B98282;
   color: #FFFFFF;
-  border-color: #111111;
-}
-
-.footer-top-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.4);
-  color: #FFFFFF;
+  border-color: #B98282;
   transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(185, 130, 130, 0.25);
 }
 
 @media (max-width: 900px) {
@@ -1967,10 +1961,10 @@
 }
 
 .btn-scroll-top:hover {
-  background-color: #111111;
-  border-color: #111111;
-  color: #FFFFFF;
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.15);
+  background-color: #FFFFFF;
+  border-color: var(--color-accent, #B98282);
+  color: var(--color-accent, #B98282);
+  box-shadow: 0 8px 24px rgba(185, 130, 130, 0.25);
   transform: translateY(-3px) scale(1.08);
 }
 
@@ -1989,10 +1983,10 @@
 }
 
 .btn-portfolio-float:hover {
-  background: #111111;
-  border-color: #111111;
-  color: #FFFFFF;
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.15);
+  background: #FFFFFF;
+  border-color: var(--color-accent, #B98282);
+  color: var(--color-accent, #B98282);
+  box-shadow: 0 8px 24px rgba(185, 130, 130, 0.25);
   transform: translateY(-3px) scale(1.08);
 }
 
@@ -2005,19 +1999,18 @@
   display: none !important;
 }
 
-/* 1. Instagram Button - Clean Minimalist Surface */
+/* 1. Instagram Button - Authentic Instagram Brand Gradient */
 .btn-instagram-float {
-  background: #FFFFFF;
-  color: #111111;
-  border: 1.5px solid rgba(17, 17, 17, 0.12);
-  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.08);
+  background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 18px rgba(225, 48, 108, 0.38);
 }
 
 .btn-instagram-float:hover {
-  background: #111111;
-  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.15);
+  background: linear-gradient(135deg, #9b44d3 0%, #ff2a2a 50%, #ffbe53 100%);
+  box-shadow: 0 10px 24px rgba(225, 48, 108, 0.60);
   color: #FFFFFF;
-  border-color: #111111;
 }
 
 /* 2. Phone Dialer Button */
@@ -2029,24 +2022,24 @@
 }
 
 .btn-phone-float:hover {
-  background-color: #111111;
-  color: #FFFFFF;
-  border-color: #111111;
-  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.18);
+  background-color: #FFFFFF;
+  color: var(--color-accent, #B98282);
+  border-color: var(--color-accent, #B98282);
+  box-shadow: 0 10px 24px rgba(185, 130, 130, 0.25);
 }
 
-/* 3. WhatsApp Button - Clean Minimalist Surface */
+/* 3. WhatsApp Button - Authentic WhatsApp Brand Green */
 .btn-whatsapp-float {
-  background: #FFFFFF;
-  color: #111111;
-  border: 1.5px solid rgba(17, 17, 17, 0.12);
-  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.08);
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.42);
 }
 
 .btn-whatsapp-float:hover {
-  background: #111111;
-  border-color: #111111;
-  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.15);
+  background: linear-gradient(135deg, #28E06E 0%, #159C8D 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.65);
   color: #FFFFFF;
 }
 
@@ -2696,17 +2689,17 @@
 }
 
 .contact-icon-bubble.bubble-wa {
-  background: #111111;
+  background: #25D366;
   color: #FFFFFF;
 }
 
 .contact-icon-bubble.bubble-phone {
-  background: #F0EDE6;
-  color: #111111;
+  background: rgba(185, 130, 130, 0.12);
+  color: #B98282;
 }
 
 .contact-icon-bubble.bubble-ig {
-  background: #F0EDE6;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: #FFFFFF;
 }
 
@@ -2967,7 +2960,7 @@
 }
 
 .btn-directions:hover {
-  background-color: var(--color-primary, #111111);
+  background-color: var(--color-primary-hover, #A56F6F);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--color-primary-glow);
 }
@@ -2998,10 +2991,10 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #111111;
+  background: #10B981;
   display: inline-block;
   margin-right: 0.5rem;
-  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.12);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
 }
 
 .map-title-bar {
@@ -3520,17 +3513,17 @@
 }
 
 .icon-wa-green {
-  background: #111111;
+  background: #25D366;
   color: #FFFFFF;
 }
 
 .icon-phone-terra {
-  background: #F0EDE6;
-  color: #111111;
+  background: rgba(185, 130, 130, 0.12);
+  color: #B98282;
 }
 
 .icon-ig-gradient {
-  background: #F0EDE6;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: #FFFFFF;
 }
 
@@ -3627,8 +3620,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  background: #FFFFFF;
-  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: rgba(185, 130, 130, 0.10);
+  border: 1px solid rgba(185, 130, 130, 0.25);
   border-radius: 9999px;
   padding: 0.45rem 1.35rem;
   font-family: var(--font-body);
@@ -3636,15 +3629,15 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #111111;
+  color: #B98282;
   margin-bottom: 1.25rem;
-  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.04);
+  box-shadow: 0 2px 10px rgba(185, 130, 130, 0.08);
 }
 
 .feedback-pill-sparkle {
   width: 14px;
   height: 14px;
-  color: #111111;
+  color: #B98282;
   flex-shrink: 0;
   display: inline-block;
 }
@@ -3814,7 +3807,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #111111;
+  background: #10B981;
   display: inline-block;
 }
 
@@ -4153,8 +4146,8 @@
 }
 
 .faq-item.is-open {
-  border-color: var(--color-text-main, #111111);
-  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.06);
+  border-color: #B98282;
+  box-shadow: 0 8px 24px rgba(185, 130, 130, 0.15);
 }
 
 .faq-question-btn {
@@ -4177,19 +4170,19 @@
 }
 
 .faq-question-btn:hover {
-  color: var(--color-text-main, #111111);
+  color: #B98282;
 }
 
 .faq-item.is-open .faq-question-btn {
-  color: var(--color-text-main, #111111);
+  color: #B98282;
 }
 
 .faq-icon-indicator {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #F0EDE6;
-  color: var(--color-text-main, #111111);
+  background: rgba(185, 130, 130, 0.10);
+  color: #B98282;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4198,12 +4191,12 @@
 }
 
 .faq-question-btn:hover .faq-icon-indicator {
-  background: #F0EDE6;
+  background: rgba(185, 130, 130, 0.18);
   transform: scale(1.06);
 }
 
 .faq-item.is-open .faq-icon-indicator {
-  background: #111111;
+  background: #B98282;
   color: #FFFFFF;
 }
 
@@ -4239,7 +4232,7 @@
 }
 
 .faq-wa-link {
-  color: #111111; text-decoration: underline;
+  color: #128C7E;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -4247,7 +4240,7 @@
 }
 
 .faq-wa-link:hover {
-  color: #111111;
+  color: #25D366;
 }
 
 .faq-footer-cta {
@@ -4273,9 +4266,9 @@
   gap: 0.5rem;
   padding: 0.7rem 1.5rem;
   background: #FFFFFF;
-  border: 1px solid rgba(17, 17, 17, 0.15);
+  border: 1px solid rgba(185, 130, 130, 0.35);
   border-radius: 999px;
-  color: var(--color-text-main, #111111);
+  color: #B98282;
   font-family: var(--font-sans);
   font-size: 0.85rem;
   font-weight: 700;
@@ -4285,11 +4278,11 @@
 }
 
 .faq-direct-chat-btn:hover {
-  background: #111111;
+  background: #B98282;
   color: #FFFFFF;
-  border-color: var(--color-text-main, #111111);
+  border-color: #B98282;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.15);
+  box-shadow: 0 6px 18px rgba(185, 130, 130, 0.28);
 }
 
 @media (max-width: 768px) {
