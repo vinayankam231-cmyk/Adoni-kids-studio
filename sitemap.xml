@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
-  <!-- Homepage -->
+  <!-- Homepage (Primary Authority) -->
   <url>
     <loc>https://adonikidstudio.netlify.app/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://adonikidstudio.netlify.app/assets/images/og-cover.jpg</image:loc>
-      <image:title>Adoni Kids Studio Luxury Newborn and Family Photography</image:title>
+      <image:title>Adoni Kids Studio Luxury Newborn, Maternity and Family Photography</image:title>
       <image:caption>Premier fine-art baby, newborn, maternity, and family photography studio in Adoni, Andhra Pradesh</image:caption>
     </image:image>
-  </url>
-
-  <!-- Services & Pricing -->
-  <url>
-    <loc>https://adonikidstudio.netlify.app/services.html</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Portfolio Gallery -->
-  <url>
-    <loc>https://adonikidstudio.netlify.app/portfolio.html</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- The Studio Experience & Estimator -->
-  <url>
-    <loc>https://adonikidstudio.netlify.app/experience.html</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <!-- About The Studio -->
   <url>
     <loc>https://adonikidstudio.netlify.app/about.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services & Packages -->
+  <url>
+    <loc>https://adonikidstudio.netlify.app/services.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Curated Portfolio Gallery -->
+  <url>
+    <loc>https://adonikidstudio.netlify.app/portfolio.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Studio Experience & Infant Safety -->
+  <url>
+    <loc>https://adonikidstudio.netlify.app/experience.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,17 +50,17 @@
   <!-- Contact & Studio Location -->
   <url>
     <loc>https://adonikidstudio.netlify.app/contact.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Client Proofing Galleries -->
+  <!-- Client Proofing & Heirloom Galleries -->
   <url>
     <loc>https://adonikidstudio.netlify.app/client-galleries.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
